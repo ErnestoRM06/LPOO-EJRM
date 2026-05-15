@@ -1,0 +1,4 @@
+Error, no se encontró el producto buscado: No hay productos con el nombre Camisa
+Error, no se encontró la clave ingresada: No existe tarjeta con la clave abc
+Error, saldo insuficiente en la cuenta: El saldo en la tarjeta de clave 123 no fue suficiente para pagar el producto Computador de escritorio
+Precio de producto: 1200.0. Saldo de la tarjeta: 1000.0
