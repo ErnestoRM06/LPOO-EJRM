@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pacientes>
+<paciente>
+<nombre>Ernesto</nombre>
+<enfermedad>Tos</enfermedad>
+<fecha>2026-05-16 15:44:19</fecha>
+</paciente>
+<paciente>
+<nombre>Reyna</nombre>
+<enfermedad>Covid</enfermedad>
+<fecha>2026-05-16 15:44:33</fecha>
+</paciente>
+</pacientes>
