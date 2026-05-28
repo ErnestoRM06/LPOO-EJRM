@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import practica11.TextFieldFloat?>
+<?import practica11.BotonAzul?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica11.FXMLTablaController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="254.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="62.0" text="Cliente: ">
+            </Label>
+            <TextField fx:id="txtCliente" prefHeight="30.0" prefWidth="198.0">
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="68.0" prefHeight="30.0" prefWidth="254.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="62.0" text="Total: ">
+            </Label>
+            <TextFieldFloat fx:id="txtTotal" prefHeight="30.0" prefWidth="199.0">
+            </TextFieldFloat>
+         </children>
+      </HBox>
+      <HBox layoutX="329.0" layoutY="14.0" prefHeight="30.0" prefWidth="254.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="62.0" text="Fecha: ">
+            </Label>
+            <TextField fx:id="txtFecha" prefHeight="30.0" prefWidth="198.0">
+            </TextField>
+         </children>
+      </HBox>
+      <BotonAzul fx:id="botonAgregar" layoutX="420.0" layoutY="124.0" mnemonicParsing="false" onAction="#botonAgregar" prefHeight="26.0" prefWidth="162.0" text="Agregar" />
+      <TableView fx:id="tablaRegistro" layoutX="14.0" layoutY="169.0" prefHeight="247.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="columnaFecha" prefWidth="214.4000244140625" text="Fecha" />
+          <TableColumn fx:id="columnaCliente" minWidth="0.0" prefWidth="218.39996337890625" text="Cliente" />
+            <TableColumn fx:id="columnaTotal" minWidth="0.0" prefWidth="88.0" text="Total" />
+            <TableColumn fx:id="columnaEliminar" minWidth="0.0" prefWidth="48.799975585937545" />
+        </columns>
+      </TableView>
+      <Text fx:id="lblFilter" layoutX="52.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="528.0" />
+      <TextField fx:id="txtFilter" layoutX="52.0" layoutY="476.0" prefHeight="26.0" prefWidth="528.0" />
+   </children>
+</AnchorPane>
