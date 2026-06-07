@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pia.Vista.FXMLReporteController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" text="Reporte" />
+      <HBox layoutX="26.0" layoutY="49.0" prefHeight="27.0" prefWidth="370.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="338.0" text="Clientes totales: " />
+            <Label fx:id="textoClientes" prefHeight="27.0" prefWidth="208.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="26.0" layoutY="76.0" prefHeight="27.0" prefWidth="369.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="253.0" text="Clientes con membresias vencidas: " />
+            <Label fx:id="textoVencidas" prefHeight="27.0" prefWidth="128.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="26.0" layoutY="103.0" prefHeight="27.0" prefWidth="369.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="253.0" text="Ingresos totales: " />
+            <Label fx:id="textoIngresos" prefHeight="27.0" prefWidth="128.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="26.0" layoutY="130.0" prefHeight="27.0" prefWidth="369.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="253.0" text="Clientes en el gimnasio hoy: " />
+            <Label fx:id="textoHoy" prefHeight="27.0" prefWidth="128.0" />
+         </children>
+      </HBox>
+      <Button fx:id="botonImprimir" layoutX="43.0" layoutY="336.0" mnemonicParsing="false" onAction="#imprimir" text="Imprimir" />
+      <Button fx:id="botonRegresar" layoutX="462.0" layoutY="336.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <HBox layoutX="26.0" layoutY="186.0" prefHeight="27.0" prefWidth="498.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="158.0" text="Nombre del archivo: " />
+            <TextField fx:id="ItextoArchivo" prefHeight="27.0" prefWidth="328.0" />
+            <Label prefHeight="27.0" prefWidth="42.0" text=".pdf" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

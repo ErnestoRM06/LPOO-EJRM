@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pia.Vista.FXMLClasesController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="28.0" layoutY="26.0" prefHeight="30.0" prefWidth="542.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="62.0" text="Evento: " />
+            <TextField fx:id="textoEvento" prefHeight="30.0" prefWidth="481.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="28.0" layoutY="78.0" prefHeight="30.0" prefWidth="542.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="62.0" text="Fecha: " />
+            <TextField fx:id="textoFecha" prefHeight="30.0" prefWidth="481.0" />
+         </children>
+      </HBox>
+      <TableView fx:id="tablaEventos" layoutX="21.0" layoutY="162.0" prefHeight="270.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="columnaEvento" prefWidth="336.79997634887695" text="Evento" />
+          <TableColumn fx:id="columnaFecha" prefWidth="222.4000244140625" text="Fecha" />
+            <TableColumn fx:id="columnaEliminar" prefWidth="96.79998779296875" text="Eliminar" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonAgregar" layoutX="63.0" layoutY="467.0" mnemonicParsing="false" onAction="#botonAgregar" text="Agregar" />
+      <Button fx:id="botonRegresar" layoutX="545.0" layoutY="467.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <Label layoutX="85.0" layoutY="119.0" text="*aaaa-mm-dd" />
+   </children>
+</AnchorPane>

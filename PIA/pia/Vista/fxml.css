@@ -1,0 +1,70 @@
+.root {
+    -fx-background-color: #f4f6f8;
+}
+
+
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #222;
+    -fx-font-weight: bold;
+}
+
+
+.button {
+    -fx-background-color: #0a6ebd;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+
+.text-field {
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #b0bec5;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2;
+}
+
+
+.table-view {
+    -fx-background-radius: 8;
+    -fx-border-color: #d0d0d0;
+    -fx-border-radius: 8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #064474;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #064474;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: #90CAF9;
+}
+
+
+#lblFilter {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}

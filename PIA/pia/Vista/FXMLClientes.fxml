@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pia.Vista.FXMLClientesController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tablaClientes" layoutX="25.0" layoutY="203.0" prefHeight="286.0" prefWidth="696.0">
+        <columns>
+          <TableColumn fx:id="columnaID" prefWidth="39.19997787475586" text="ID" />
+          <TableColumn fx:id="columnaNombre" prefWidth="186.3999786376953" text="Nombre" />
+            <TableColumn fx:id="columnaTelefono" prefWidth="126.4000244140625" text="Telefono" />
+            <TableColumn fx:id="columnaMembresia" prefWidth="131.20001220703125" text="Membresia" />
+            <TableColumn fx:id="columnaTiempo" prefWidth="131.20001220703125" text="Tiempo restante" />
+            <TableColumn fx:id="columnaEliminar" prefWidth="76.800048828125" text="Eliminar" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="522.0" text="Buscar por ID, nombre o membresia:" />
+      <TextField fx:id="textoBuscar" layoutX="22.0" layoutY="548.0" prefHeight="26.0" prefWidth="696.0" />
+      <Button fx:id="botonRegresar" layoutX="624.0" layoutY="622.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <HBox layoutX="32.0" layoutY="33.0" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="94.0" text="ID:" />
+            <TextField fx:id="textoID" prefHeight="26.0" prefWidth="207.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="86.0" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="94.0" text="Nombre:" />
+            <TextField fx:id="textoNombre" prefHeight="26.0" prefWidth="206.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="141.0" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="80.0" text="Telefono:" />
+            <TextField fx:id="textoTelefono" prefHeight="26.0" prefWidth="191.0" />
+         </children>
+      </HBox>
+      <Button fx:id="botonAgregar" layoutX="59.0" layoutY="622.0" mnemonicParsing="false" onAction="#botonAgregar" prefHeight="26.0" prefWidth="168.0" text="Agregar/Modificar" />
+      <HBox layoutX="390.0" layoutY="33.0" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="94.0" text="Membresia:" />
+            <TextField fx:id="textoMembresia" prefHeight="26.0" prefWidth="170.0" />
+         </children>
+      </HBox>
+      <Label layoutX="390.0" layoutY="69.0" prefHeight="47.0" prefWidth="269.0" text="*Por favor, solo ingrese 1, para la versión básica; o 2, para la versión premium" wrapText="true" />
+      <HBox layoutX="390.0" layoutY="128.0" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="94.0" text="Duración:" />
+            <TextField fx:id="textoDuracion" prefHeight="26.0" prefWidth="172.0" />
+         </children>
+      </HBox>
+      <Label layoutX="390.0" layoutY="164.0" prefHeight="26.0" prefWidth="144.0" text="*Días" wrapText="true" />
+   </children>
+</AnchorPane>

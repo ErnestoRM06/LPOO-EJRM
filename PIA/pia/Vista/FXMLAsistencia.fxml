@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pia.Vista.FXMLAsistenciaController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="46.0" layoutY="36.0" prefHeight="30.0" prefWidth="262.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="182.0" text="ID del cliente:" />
+            <TextField fx:id="textoID" prefHeight="34.0" prefWidth="147.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="46.0" layoutY="85.0" prefHeight="30.0" prefWidth="424.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="182.0" text="Hora de entrada:" />
+            <TextField fx:id="textoEntrada" prefHeight="30.0" prefWidth="307.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="46.0" layoutY="134.0" prefHeight="30.0" prefWidth="424.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="182.0" text="Hora de salida:" />
+            <TextField fx:id="textoSalida" prefHeight="30.0" prefWidth="307.0" />
+         </children>
+      </HBox>
+      <TableView fx:id="tablaRegistros" layoutX="27.0" layoutY="257.0" prefHeight="312.0" prefWidth="760.0">
+        <columns>
+          <TableColumn fx:id="columnaCliente" prefWidth="144.0" text="Cliente" />
+          <TableColumn fx:id="columnaEntrada" prefWidth="164.0" text="Hora de entrada" />
+            <TableColumn fx:id="columnaSalida" prefWidth="183.20001220703125" text="Hora de salida" />
+            <TableColumn fx:id="columnaDia" prefWidth="164.800048828125" text="Dia" />
+            <TableColumn fx:id="columnaEliminar" prefWidth="101.5999755859375" text="Eliminar" />
+        </columns>
+      </TableView>
+      <HBox layoutX="46.0" layoutY="184.0" prefHeight="30.0" prefWidth="424.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="182.0" text="Dia:" />
+            <TextField fx:id="textoDia" prefHeight="30.0" prefWidth="307.0" />
+         </children>
+      </HBox>
+      <Button fx:id="botonAgregar" layoutX="67.0" layoutY="672.0" mnemonicParsing="false" onAction="#botonAgregar" text="Agregar" />
+      <Button fx:id="botonRegresar" layoutX="665.0" layoutY="672.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <Label layoutX="32.0" layoutY="590.0" text="Buscar por ID o Fecha" />
+      <TextField fx:id="textoBuscar" layoutX="27.0" layoutY="620.0" prefHeight="26.0" prefWidth="760.0" />
+      <Label layoutX="515.0" layoutY="119.0" prefHeight="48.0" prefWidth="274.0" text="*Ingresar horas en formato hh:mm:ss.mmmmmm" wrapText="true" />
+      <Label layoutX="515.0" layoutY="190.0" prefHeight="48.0" prefWidth="226.0" text="*Ingresar dia en formato aaaa-mm-dd" wrapText="true" />
+   </children>
+</AnchorPane>
